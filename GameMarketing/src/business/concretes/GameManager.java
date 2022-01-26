@@ -18,13 +18,7 @@ public class GameManager implements GameService {
 		this.campaingService = campaingService;
 	}
 
-	@Override
-	public void GameSelling(Campaign campaign, Customer customer, Game game) {
-		System.out.println(campaign.getCampaignName() + " kampanyasý uygulandý." + " indirim oraný %"
-				+ campaign.getPercentOfCampaign());
-		campaingService.applyCampaign(campaign, customer, game);
 
-	}
 
 	@Override
 	public void add(Game game) {
